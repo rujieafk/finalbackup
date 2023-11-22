@@ -1,0 +1,141 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = RentHive
+build_property.RootNamespace = RentHive
+build_property.ProjectDir = C:\Users\rujie\OneDrive\Desktop\RentHive\finalbackup\RentHive\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\rujie\OneDrive\Desktop\RentHive\finalbackup\RentHive
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/rujie/OneDrive/Desktop/RentHive/finalbackup/RentHive/Views/Home/BanAccounts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCYW5BY2NvdW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rujie/OneDrive/Desktop/RentHive/finalbackup/RentHive/Views/Home/DeactPosts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZWFjdFBvc3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rujie/OneDrive/Desktop/RentHive/finalbackup/RentHive/Views/Home/SortedDate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTb3J0ZWREYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rujie/OneDrive/Desktop/RentHive/finalbackup/RentHive/Views/Home/UserVerification.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2VyVmVyaWZpY2F0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rujie/OneDrive/Desktop/RentHive/finalbackup/RentHive/Views/PostMonitoring/HiveUserPostList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdE1vbml0b3JpbmdcSGl2ZVVzZXJQb3N0TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rujie/OneDrive/Desktop/RentHive/finalbackup/RentHive/Views/PostMonitoring/ListOfPost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdE1vbml0b3JpbmdcTGlzdE9mUG9zdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rujie/OneDrive/Desktop/RentHive/finalbackup/RentHive/Views/PostMonitoring/ListOfRented.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdE1vbml0b3JpbmdcTGlzdE9mUmVudGVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rujie/OneDrive/Desktop/RentHive/finalbackup/RentHive/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rujie/OneDrive/Desktop/RentHive/finalbackup/RentHive/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rujie/OneDrive/Desktop/RentHive/finalbackup/RentHive/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rujie/OneDrive/Desktop/RentHive/finalbackup/RentHive/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rujie/OneDrive/Desktop/RentHive/finalbackup/RentHive/Views/Home/BanAccountInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCYW5BY2NvdW50SW5mby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-ibwl7o3res
+
+[C:/Users/rujie/OneDrive/Desktop/RentHive/finalbackup/RentHive/Views/Home/DeactPostInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZWFjdFBvc3RJbmZvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-gh6r6hjg7b
+
+[C:/Users/rujie/OneDrive/Desktop/RentHive/finalbackup/RentHive/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-xlcmrfej9m
+
+[C:/Users/rujie/OneDrive/Desktop/RentHive/finalbackup/RentHive/Views/Home/Reports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-m6lt35foel
+
+[C:/Users/rujie/OneDrive/Desktop/RentHive/finalbackup/RentHive/Views/Home/SortedList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTb3J0ZWRMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-fhpdmks3ox
+
+[C:/Users/rujie/OneDrive/Desktop/RentHive/finalbackup/RentHive/Views/Home/UserVerification_Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2VyVmVyaWZpY2F0aW9uX0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-mmmudo4lx3
+
+[C:/Users/rujie/OneDrive/Desktop/RentHive/finalbackup/RentHive/Views/PostMonitoring/HiveUserPostDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdE1vbml0b3JpbmdcSGl2ZVVzZXJQb3N0RGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-l11xp766ve
+
+[C:/Users/rujie/OneDrive/Desktop/RentHive/finalbackup/RentHive/Views/PostMonitoring/SelectedPostDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdE1vbml0b3JpbmdcU2VsZWN0ZWRQb3N0RGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-l8vnta5sp1
+
+[C:/Users/rujie/OneDrive/Desktop/RentHive/finalbackup/RentHive/Views/Shared/WelcomePage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFdlbGNvbWVQYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-fpb2sa7aui
+
+[C:/Users/rujie/OneDrive/Desktop/RentHive/finalbackup/RentHive/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-5jpv8no7c3
+
+[C:/Users/rujie/OneDrive/Desktop/RentHive/finalbackup/RentHive/Views/SystemManagement/HiveAdminList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3lzdGVtTWFuYWdlbWVudFxIaXZlQWRtaW5MaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-ondu14q7ys
+
+[C:/Users/rujie/OneDrive/Desktop/RentHive/finalbackup/RentHive/Views/SystemManagement/HiveUserDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3lzdGVtTWFuYWdlbWVudFxIaXZlVXNlckRldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-yr4jr15dkr
+
+[C:/Users/rujie/OneDrive/Desktop/RentHive/finalbackup/RentHive/Views/SystemManagement/HiveUserList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3lzdGVtTWFuYWdlbWVudFxIaXZlVXNlckxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-hotq4xxp50
+
+[C:/Users/rujie/OneDrive/Desktop/RentHive/finalbackup/RentHive/Views/SystemManagement/HiveUserLog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3lzdGVtTWFuYWdlbWVudFxIaXZlVXNlckxvZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-3wm2c4dp1z
+
+[C:/Users/rujie/OneDrive/Desktop/RentHive/finalbackup/RentHive/Views/SystemManagement/HiveUserPayment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3lzdGVtTWFuYWdlbWVudFxIaXZlVXNlclBheW1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-5gsp9rgq0h
+
+[C:/Users/rujie/OneDrive/Desktop/RentHive/finalbackup/RentHive/Views/SystemManagement/HiveUserStatus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3lzdGVtTWFuYWdlbWVudFxIaXZlVXNlclN0YXR1cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-fuxjlupbj1
+
+[C:/Users/rujie/OneDrive/Desktop/RentHive/finalbackup/RentHive/Views/UserManagement/DeleteAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlck1hbmFnZW1lbnRcRGVsZXRlQWNjb3VudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-ieh00yd07i
+
+[C:/Users/rujie/OneDrive/Desktop/RentHive/finalbackup/RentHive/Views/UserManagement/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlck1hbmFnZW1lbnRcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ek2qsu3gor
+
+[C:/Users/rujie/OneDrive/Desktop/RentHive/finalbackup/RentHive/Views/UserManagement/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlck1hbmFnZW1lbnRcUHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-haj9zq1ooc
+
+[C:/Users/rujie/OneDrive/Desktop/RentHive/finalbackup/RentHive/Views/UserManagement/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlck1hbmFnZW1lbnRcU2lnblVwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-tv13fgrhy5

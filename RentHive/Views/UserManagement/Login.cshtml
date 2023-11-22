@@ -1,0 +1,74 @@
+﻿@model RentHive.Models.UserDataGetter
+@{
+    ViewData["Title"] = "Login";
+}
+
+
+    <div class="loginBox">
+        <form method="POST">
+            <center>
+                <img style="width: 105px; height: 78px; top: 100px" src="~/images/logo2.png" />
+            <div class="animate-renthive" >R E N T H I V E</div>
+                <div class="animate-admin">ADMIN</div>
+            </center><br />
+
+
+        <input name="Acc_Email" class="loginInput" placeholder="Email" value="rujie@gmail.com" required /><br><br>
+            <div class="passwordInput">
+            <input name="Acc_Password" class="password-text" type="password" placeholder="Password" value="rujie12345" required />
+            <span class="toggle-password" id="togglePassword">
+                <img src="~/images/visible.png" id="showIcon" class="show-icon" />
+                <img src="~/images/hide.png" class="hide-icon" id="hideIcon" />
+            </span>
+            </div>
+            
+            
+            <div class="divForgetPass">
+                <button class="forgetPass" onclick="location.href='@Url.Action("","")'">Forgot Password?</button> 
+            </div>
+            
+
+            <button type="submit" class="loginBtn">Login</button>
+        </form>
+    
+    </div>
+<footer style="width: 407px; height: 39px; left: 479px; top: 580px; position: absolute; text-align: center; color: white; font-size: 12px; font-family: Poppins; font-weight: 500; word-wrap: break-word">© 2023 Renthive | All rights reserved </footer>
+@if (ViewBag.ErrorMessage != null)
+{
+    <script type="text/javascript">
+        window.onload = function(){
+            alert("@ViewBag.ErrorMessage");
+        }
+    </script>
+}
+@* <div class="fade-in">
+    <div class="Logincontainer">
+        <div>
+            <img src="~/images/logo2.png" class="logo" />
+            <h1 class="WelcomeText">Welcome to RentHive.<br />
+                <p class="sub-text">A Web and Mobile-Based Application <br /> for an Easy Renting Process and Secure Payment Options</p>
+            </h1>
+        </div>
+        <div class="LoginForm">
+            <h1>Login</h1>
+            <form method="POST">
+                <div class="TextboxHolder">
+                    <input name="Acc_Email" class="InputTextbox1" placeholder="Username" value="rujie@gmail.com" required />
+                </div>
+                <div class="TextboxHolder">
+                    <input name="Acc_Password" class="password-text" type="password" placeholder="Password" value="rujie12345" required />
+                    <span class="toggle-password" id="togglePassword">
+                        <img src="~/images/visible.png" id="showIcon" class="show-icon" />
+                        <img src="~/images/hide.png" class="hide-icon" id="hideIcon" />
+                    </span>
+                </div>
+                <div>
+                    <a class="_forgetpass" onclick="location.href='@Url.Action("","")'">Forget Password?</a>
+                </div>
+                <div>
+                    <button type="submit" class="myButton">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div> *@

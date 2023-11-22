@@ -1,0 +1,254 @@
+﻿@model RentHive.Models.UserDataGetter
+@{
+    ViewData["Title"] = "Home";
+}
+<div class="home-index" method="Post">
+    <div class="side-nav">
+        <div class="user">
+            <img src="~/images/logo2.png" class="user-img" />
+        </div>  
+
+        <ul class="menu-list">
+            <li class="menu-item">
+                <img class="menu-icon" src="~/images/dashboard.png" /><a class="menu-text" onclick="location.href='@Url.Action("Index", "Home", new {Acc_id = Model.Acc_id})'">Home</a>
+            </li>
+            <li class="menu-item">
+                <img class="menu-icon" src="~/images/group.png" /><a class="menu-text" onclick="location.href='@Url.Action("HiveUserList", "SystemManagement", new {Acc_id = Model.Acc_id,Acc_FirstName = Model.Acc_FirstName, Acc_MiddleName = Model.Acc_MiddleName, Acc_LastName = Model.Acc_LastName
+        , Acc_DisplayName = Model.Acc_DisplayName, Acc_UserType = Model.Acc_UserType})'">User List</a>
+            </li>
+        </ul>
+
+        <ul class="menu-list">
+            <li class="menu-item"><img class="menu-icon" src="~/images/logout.png" /><a href="#popup" class="menu-text">Logout</a></li>
+        </ul>
+    </div>
+
+    <div style="width: 100%; height: 100%; position: relative; background: #313538; border: 1px solid white;">
+        <div style="width: 418.65px; height: 65.24px; left: 590px; top: 9px; position: absolute; color: white; font-size: 50px; font-family: Poppins; font-weight: 800; word-wrap: break-word">
+            DASHBOARD
+        </div>
+
+        <div style="width: 70px; height: 53px; left: 578px; top: 490px; position: absolute; color: white; font-size: 50px; font-family: Poppins; font-weight: 700; word-wrap: break-word">@ViewBag.UserCount</div> @* ari ibutang kung pilay total users *@
+
+
+        <div style="width: 58px; height: 65px; left: 840px; top: 480px; position: absolute; color: white; font-size: 50px; font-family: Poppins; font-weight: 700;">@ViewBag.AdminCount</div> @*counting ni sa tanan administrator*@
+
+
+        <div style="width: 488px; height: 271px; left: 494px; top: 112px; position: absolute; background: rgba(250, 112, 31, 0.05); border-radius: 22px; border: 1px #FA701F solid"></div> @*border and fill sa 4 buttons*@
+
+        @* 4 BUTTONS *@
+        <div style="width: 222px; height: 113px; left: 510px; top: 122px; position: absolute">
+            <button class="unresolvedReports" onclick="location.href='@Url.Action("Reports", "Home", new {Acc_id = Model.Acc_id})'">Unresolved<br />Reports</button>
+        </div>
+        <div style="width: 222px; height: 113px; left: 749px; top: 122px; position: absolute">
+            <button class="deactivatedAcc" onclick="location.href='@Url.Action("UserVerification", "Home", new {Acc_id = Model.Acc_id})'">Verification</button>
+        </div>
+        <div style="width: 222px; height: 111px; left: 749px; top: 258px; position: absolute">
+            <button class="deactivatedPost" onclick="location.href='@Url.Action("DeactPosts", "Home", new {Acc_id = Model.Acc_id})'">Deactivated<br />Posts</button>
+        </div>
+        <div style="width: 222px; height: 111px; left: 510px; top: 256px; position: absolute">
+            <button class="bannedUser" onclick="location.href='@Url.Action("BanAccounts", "Home", new {Acc_id = Model.Acc_id})'">Banned<br />Users</button>
+        </div>
+        @* END OF 4 BUTTONS *@
+
+
+        @*total number of users*@
+        <div style="width: 238px; height: 226px; left: 494px; top: 399px; position: absolute">
+            <div style="width: 238px; height: 226px; left: 0px; top: 0px; position: absolute; background: rgba(250, 112, 31, 0.05); border-radius: 22px; border: 1px #FA701F solid"></div>
+            <div style="width: 145px; height: 54px; left: 47px; top: 22px; position: absolute; text-align: center; color: white; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word">Total Number of User</div>
+        </div>
+
+        @*button to show all user*@
+        <div style="width: 221px; height: 36px; left: 502px; top: 579px; position: absolute">
+            @* <div style="width: 221px; height: 36px; left: 0px; top: 0px; position: absolute; background: rgba(250, 112, 31, 0.50); border-radius: 22px; border: 1px #FA701F solid"></div> *@
+            <button class="show_btn" onclick="location.href='@Url.Action("HiveUserList", "SystemManagement", new { Acc_id = Model.Acc_id, Acc_FirstName = Model.Acc_FirstName, Acc_MiddleName = Model.Acc_MiddleName, Acc_LastName = Model.Acc_LastName, Acc_DisplayName = Model.Acc_DisplayName, Acc_UserType = Model.Acc_UserType })'">SHOW ALL</button>
+        </div>
+
+        @*border and fill sa edit profile*@
+        <div style="width: 325px; height: 513px; left: 152px; top: 112px; position: absolute; background: rgba(250, 112, 31, 0.05); border-radius: 22px; border: 1px #FA701F solid">
+            <br />
+            <center>
+                @if (!string.IsNullOrEmpty(Model.Images))
+                {
+                    byte[] imageBytes = Convert.FromBase64String(Model.Images);
+                    string imageSrc = string.Format("data:image/png;base64,{0}", Convert.ToBase64String(imageBytes));
+                    <img src="@imageSrc" style="left:152px; width: 160px; height: 160px; border-radius: 9999px;" alt="User Image" />
+                }
+                else
+                {
+                    <img id="img" src="~/images/user.png" style="left:152px; width: 160px; height: 160px; border-radius: 9999px;" />
+                }
+            </center>
+            <div style="width: 323px; height: 18px; left: 1px; top: 180px; position: absolute; text-align: center; color: white; font-size: 30px; font-family: Poppins; font-weight: 700; word-wrap: break-word" value="@Model.Acc_DisplayName">@Model.Acc_DisplayName</div>
+            <div style="width: 323px; height: 18px; left: 1px; top: 220px; position: absolute; text-align: center; color: #FA701F; font-size: 10px; font-family: Poppins; font-weight: 700; word-wrap: break-word">SUPER ADMIN</div>
+
+            <div class="Email" style="width: 41px; height: 18px; left: 19px; top: 250px; position: absolute; color: white; font-size: 12px; font-family: Poppins; font-weight: 600; word-wrap: break-word">Email:</div>
+            <div class="insertDataHere" style="top: 268px; position: absolute; color: rgba(255, 255, 255, 0.60); font-size: 10px; font-family: Poppins; font-weight: 300; word-wrap: break-word">@Model.Acc_Email</div>
+
+            <div class="ContactNo" style="width: 78px; height: 18px; left: 19px; top: 295px; position: absolute; color: white; font-size: 12px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Contact No:</div>
+            <div class="insertDataHere" style="top: 313px; ">@Model.Acc_PhoneNum</div>
+
+            <div class="Birthdate" style="width: 68px; height: 18px; left: 19px; top: 340px; position: absolute; color: white; font-size: 12px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Birthdate:</div>
+            <div class="insertDataHere" style="top: 358px;">@Model.Acc_Birthdate</div>
+
+            <div class="Address" style="width: 68px; height: 18px; left: 19px; top: 390px; position: absolute; color: white; font-size: 12px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Address:</div>
+            <div class="insertDataHere" style="top: 408px; position: absolute; color: rgba(255, 255, 255, 0.60); font-size: 10px; font-family: Poppins; font-weight: 300; word-wrap: break-word">@Model.Acc_Address</div>
+
+        </div>
+        @*button to edit profile informations*@
+        <div style="width: 296px; height: 36px; left: 168px; top: 579px; position: absolute">
+            <button class="editProfile_btn" onclick="location.href='@Url.Action("Profile", "UserManagement",new { TempuserId = Model.Acc_id})'">EDIT PROFILE</button>
+        </div>
+
+
+        @*button to show all admin*@
+        <div style="width: 238px; height: 226px; left: 749px; top: 399px; position: absolute">
+            <div style="width: 238px; height: 226px; left: 0px; top: 0px; position: absolute; background: rgba(250, 112, 31, 0.05); border-radius: 22px; border: 1px #FA701F solid"></div>
+            <div style="width: 167px; height: 54px; left: 36px; top: 22px; position: absolute; text-align: center; color: white; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word">Total Number of Administrators</div>
+        </div>
+        <div style="width: 221px; height: 36px; left: 758px; top: 579px; position: absolute">
+            <button class="show_btn2" onclick="location.href='@Url.Action("HiveAdminList", "SystemManagement", new { Acc_id = Model.Acc_id, Acc_FirstName = Model.Acc_FirstName, Acc_MiddleName = Model.Acc_MiddleName, Acc_LastName = Model.Acc_LastName, Acc_DisplayName = Model.Acc_DisplayName, Acc_UserType = Model.Acc_UserType })'">SHOW ALL</button>
+        </div>
+
+        @*LIVE DATE & TIME*@
+        <div id="date" style="width: 300px; height: 143px; left: 1015px; top: 271px; position: absolute; text-align: center; color: white; font-size: 50px; font-family: Poppins; font-weight: 700; word-wrap: break-word"></div>
+        <div style="width: 323px; height: 513px; left: 1003px; top: 112px; position: absolute; background: rgba(250, 112, 31, 0.05); border-radius: 22px; border: 1px #FA701F solid"></div> @*DATE AND TIME BORDER AND FILL*@
+        <div id="time" style="width: 167px; height: 34px; left: 1081px; top: 414px; position: absolute; text-align: center; color: white; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word"></div>  @*DISPLAY TIME*@
+    </div>
+
+        <script>
+            // Function to update the date and time in words every second
+            function updateDate() {
+                const now = new Date();
+                const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+                const timeOptions = { hour: '2-digit', minute: '2-digit', hour12: true };
+                const dateInWords = now.toLocaleDateString('en-US', dateOptions);
+
+                const datetimeElement = document.getElementById('date');
+                datetimeElement.textContent = `${dateInWords}`;
+            }
+
+            // Call the function to initially display the date and time
+            updateDate();
+
+
+
+            function updateTime() {
+                const now = new Date();
+                const hours = now.getHours();
+                const minutes = now.getMinutes().toString().padStart(2, '0');
+                const ampm = hours >= 12 ? 'PM' : 'AM';
+                const hours12 = (hours % 12) || 12; // Convert 0 to 12
+                const timeString = `${hours12}:${minutes} ${ampm}`;
+                const timeElement = document.getElementById('time');
+                timeElement.textContent = timeString;
+            }
+
+            // Call the function to initially display the time
+            updateTime();
+
+            // Update the date and time every second
+            setInterval(updateDate, 1000);
+            setInterval(updateTime, 1000);
+
+        </script>
+        
+       @*  OLD BODY BELOW *@
+   @*  </div>
+    <button class="notification-button" onclick="location.href='@Url.Action("Notification","System")'"><img class="notification-icon" src="~/images/bell.png"></button>
+
+    <div class="hive-title-holder">
+        <h1>@Model.Acc_DisplayName - Home</h1>
+    </div>
+    <div class="hive-border-holder">
+        <div class="home-content">
+            <div class="home-profile-details">
+                <div class="welcome-admin">
+                    <h4>Welcome,</h4>
+                    <div class="admin-img">
+                        <img src="~/images/user.png" class="user-img2" />
+                    </div>
+                </div>
+                <div class="admin-info">
+                    <p>Admin info :</p>
+                    <hr />
+                    <table>
+                        <tr>
+                            <td><p>Name</p></td>
+                            <td><p>: &nbsp; @Model.Acc_FirstName @Model.Acc_MiddleName @Model.Acc_LastName</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>User Type &nbsp;</p></td>
+                            <td><p>: &nbsp; @Model.Acc_UserType</p></td>
+                        </tr>
+                    </table>
+                    <div><a class="text" asp-controller="UserManagement" asp-action="Signup" asp-route-TempuserId="@Model.Acc_id">Enroll New Administrator</a></div>
+                </div>
+            </div>
+            <div class="home-user-details">
+                <div class="user-details">
+                    <h4>User's Information</h4>
+                    <div class="user-details-content">
+                        <button onclick="location.href='@Url.Action("HiveUserList", "SystemManagement", new { Acc_id = Model.Acc_id, Acc_FirstName = Model.Acc_FirstName, Acc_MiddleName = Model.Acc_MiddleName, Acc_LastName = Model.Acc_LastName, Acc_DisplayName = Model.Acc_DisplayName, Acc_UserType = Model.Acc_UserType })'">View List</button>
+                        <button onclick="location.href='#/* @Url.Action("", "") */'">View Services List</button>
+                        <button onclick="location.href='#/* @Url.Action("", "") */'">View Rent Problem Reports</button>
+                    </div>
+                </div>
+                <div class="content-holder">
+                    <div class="counter-details-holder">
+                        <div class="counter-details">
+                            <div class="numOfusers">
+                                <h6>Number of User</h6>
+                                <hr />
+                                <h5>00</h5>
+                            </div>
+                            <div class="numOfreports">
+                                <h6>Number of Reports</h6>
+                                <hr />
+                                <h5>00</h5>
+                            </div>
+                        </div>
+                        <div class="admin-list">
+                            <div class="admin-list-content">
+                                <h6>Other Administrator Account List</h6>
+                                <hr />
+                                <button onclick="location.href='@Url.Action("HiveAdminList", "SystemManagement", new { Acc_id = Model.Acc_id, Acc_FirstName = Model.Acc_FirstName, Acc_MiddleName = Model.Acc_MiddleName, Acc_LastName = Model.Acc_LastName, Acc_DisplayName = Model.Acc_DisplayName, Acc_UserType = Model.Acc_UserType })'">View List</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="About-us-holder">
+                        <div class="About-us-content">
+                            <h3>About Us</h3>
+                            <h5></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+</div>
+<div id="popup" class="action-button">
+    <div class="border2">
+        <h1>Log Out?</h1>
+        <div class="message">
+            <h4 style="color: white">Are you sure you want to log out?</h4>
+        </div>
+        <form method="post" action="@Url.Action("Logout", "UserManagement")">
+            <button type="submit" class="btn btn-danger">Yes</button>
+            <a href="#" class="btn btn-primary">No</a>
+        </form>
+    </div>
+</div>
+@if (ViewBag.ErrorMessage != null)
+{
+    <script type="text/javascript">
+        window.onload = function () {
+            alert("@ViewBag.ErrorMessage");
+        }
+    </script>
+}
+<script>
+    window.onpopstate = function () {
+        location.reload(); // Refresh the page when the back button is clicked
+    };
+</script>
+
